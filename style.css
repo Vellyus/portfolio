@@ -81,6 +81,10 @@ h4 {
   letter-spacing: .1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 a.anchor {
   display: block;
   position: relative;
