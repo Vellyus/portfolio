@@ -264,6 +264,7 @@ footer {
 }
 
 footer a {
+  font-family: "Nunito";
   color: var(--secondaryColor);
   font-size: 1.5rem;
   text-decoration: none;
