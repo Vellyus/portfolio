@@ -135,7 +135,7 @@ const englishLang =
   langswitch: "HU",
   h2: "Front-End Developer",
   section1Title: "About",
-  section1Paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quae reiciendis aspernatur ut eius magni dolor fugit officia aperiam soluta officiis dolorum cupiditate harum error!",
+  section1Paragraph: "I'm a junior level developer, I create websites and web-applications. My basic needs involve caffeine.",
   resumeLink: "Read my resume",
 
   section2Title: "Tech I'm familiar with",
@@ -156,7 +156,7 @@ const hunLang =
   langswitch: "EN",
   h2: "Front-End Fejlesztő",
   section1Title: "Rólam",
-  section1Paragraph: "Junior szintű fejlesztő vagyok, weboldalakat és webes alkalmazásokat készítek. Egyetlen káros szenvedélyem a koffeinfüggőség.",
+  section1Paragraph: "Junior szintű fejlesztő vagyok, weboldalakat és webes alkalmazásokat készítek. A koffein az alapvető szükségleteim közé tartozik.",
   resumeLink: "Nézd meg az önéletrajzom",
 
   section2Title: "Technológiák",
