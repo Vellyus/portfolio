@@ -134,19 +134,19 @@ const englishLang =
 {
   langswitch: "HU",
   h2: "Front-End Developer",
-  section1Title: "About",
+  section1Title: "About me",
   section1Paragraph: "I'm a junior level developer, I create websites and web-applications. My basic needs involve caffeine.",
   resumeLink: "Read my resume",
 
-  section2Title: "Tech I'm familiar with",
+  section2Title: "Tech Stack",
 
   section3Title: "Some of my Projects",
   project1Title: "Personal website",
-  project1Paragraph: "",
+  project1Paragraph: "The site basically evolves as my coding skills grow. It contains every project that I did while learning to code and I write a blog about my journey.",
   project2Title: "Music player app",
-  project2Paragraph: "",
+  project2Paragraph: "A music player app, with which the user can create a playlist from the songs I like. Other songs can be added by pasting in YouTube links. The app works with.",
   project3Title: "Weather app",
-  project3Paragraph: "",
+  project3Paragraph: "A weather app that works with a web API. You can use it with location or you can search for a city. It also shows the local time of the searched location. Based on the browser's language the app can display the content in hungarian or in english.",
 
   footerTitle: "Contact"
 }
@@ -172,3 +172,9 @@ const hunLang =
   footerTitle: "Elérhetőség"
 }
 
+const langswitch = document.querySelector(".lang")
+
+langswitch.addEventListener("click", () =>
+{
+
+})
