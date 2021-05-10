@@ -156,7 +156,7 @@ const hunLang =
   langswitch: "EN",
   h2: "Front-End Fejlesztő",
   section1Title: "Rólam",
-  section1Paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quae reiciendis aspernatur ut eius magni dolor fugit officia aperiam soluta officiis dolorum cupiditate harum error!",
+  section1Paragraph: "Junior szintű fejlesztő vagyok, weboldalakat és webes alkalmazásokat készítek. Egyetlen káros szenvedélyem a koffeinfüggőség.",
   resumeLink: "Nézd meg az önéletrajzom",
 
   section2Title: "Technológiák",
