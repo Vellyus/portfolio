@@ -134,13 +134,13 @@ const englishLang =
 {
   langswitch: "HU",
   h2: "Front-End Developer",
-  section1Title: "About me",
+  section1Title: "About Me",
   section1Paragraph: "I'm a junior level developer, I create websites and web-applications. My basic needs involve caffeine.",
   resumeLink: "Read my resume",
 
   section2Title: "Tech Stack",
 
-  section3Title: "Some of my Projects",
+  section3Title: "Projects",
   project1Title: "Personal website",
   project1Paragraph: "The site basically evolves as my coding skills grow. It contains every project that I did while learning to code and I write a blog about my journey.",
   project2Title: "Music player app",
@@ -173,8 +173,73 @@ const hunLang =
 }
 
 const langswitch = document.querySelector(".lang")
+const nav1 = document.querySelectorAll("nav ul li a")[0]
+const nav2 = document.querySelectorAll("nav ul li a")[1]
+const nav3 = document.querySelectorAll("nav ul li a")[2]
+const nav4 = document.querySelectorAll("nav ul li a")[3]
+const section1Title = document.querySelector(".about h3")
+const section1Paragraph = document.querySelector(".about p")
+const resumeLink = document.querySelector(".resumeLink")
+const section2Title = document.querySelector(".techStack h3")
+const section3Title = document.querySelector(".projects h3")
+const project1Title = document.querySelectorAll(".projects h4")[0]
+const project1Paragraph = document.querySelectorAll(".projects p")[0]
+const project2Title = document.querySelectorAll(".projects h4")[1]
+const project2Paragraph = document.querySelectorAll(".projects p")[1]
+
+const project3Title = document.querySelectorAll(".projects h4")[2]
+const project3Paragraph = document.querySelectorAll(".projects p")[2]
+const footerTitle = document.querySelector("footer h3")
+
+const line = document.querySelector(".line")
 
 langswitch.addEventListener("click", () =>
 {
+  if (langswitch.innerText === "EN")
+  {
+    h2.innerText = englishLang.h2
+    nav1.innerText = englishLang.section1Title
+    nav2.innerText = englishLang.section2Title
+    nav3.innerText = englishLang.section3Title
+    nav4.innerText = englishLang.footerTitle
+
+    section1Title.innerText = englishLang.section1Title
+    section1Paragraph.innerText = englishLang.section1Paragraph
+    resumeLink.innerText = englishLang.resumeLink
+    line.style.width = "7rem"
+    section2Title.innerText = englishLang.section2Title
+    section3Title.innerText = englishLang.section3Title
+    project1Title.innerText = englishLang.project1Title
+    project1Paragraph.innerText = englishLang.project1Paragraph
+    project2Title.innerText = englishLang.project2Title
+    project2Paragraph.innerText = englishLang.project2Paragraph
+    project3Title.innerText = englishLang.project3Title
+    project3Paragraph.innerText = englishLang.project3Paragraph
+    footerTitle.innerText = englishLang.footerTitle
+    langswitch.innerText = englishLang.langswitch
+  }
+  else
+  {
+    h2.innerText = hunLang.h2
+    nav1.innerText = hunLang.section1Title
+    nav2.innerText = hunLang.section2Title
+    nav3.innerText = hunLang.section3Title
+    nav4.innerText = hunLang.footerTitle
+
+    section1Title.innerText = hunLang.section1Title
+    section1Paragraph.innerText = hunLang.section1Paragraph
+    resumeLink.innerText = hunLang.resumeLink
+    line.style.width = "15rem"
+    section2Title.innerText = hunLang.section2Title
+    section3Title.innerText = hunLang.section3Title
+    project1Title.innerText = hunLang.project1Title
+    project1Paragraph.innerText = hunLang.project1Paragraph
+    project2Title.innerText = hunLang.project2Title
+    project2Paragraph.innerText = hunLang.project2Paragraph
+    project3Title.innerText = hunLang.project3Title
+    project3Paragraph.innerText = hunLang.project3Paragraph
+    footerTitle.innerText = hunLang.footerTitle
+    langswitch.innerText = hunLang.langswitch
+  }
 
 })
