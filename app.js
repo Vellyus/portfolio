@@ -135,7 +135,7 @@ const englishLang =
   langswitch: "HU",
   h2: "Front-End Developer",
   section1Title: "About Me",
-  section1Paragraph: "I'm a junior level developer, I create websites and web-applications. My basic needs involve caffeine.",
+  section1Paragraph: "I'm a junior level developer, I create websites and web-applications. My basic needs involve caffeine and listening to music.",
   resumeLink: "Read my resume",
 
   section2Title: "Tech Stack",
@@ -156,7 +156,7 @@ const hunLang =
   langswitch: "EN",
   h2: "Front-End Fejlesztő",
   section1Title: "Rólam",
-  section1Paragraph: "Junior szintű fejlesztő vagyok, weboldalakat és webes alkalmazásokat készítek. A koffein az alapvető szükségleteim közé tartozik.",
+  section1Paragraph: "Junior szintű fejlesztő vagyok, weboldalakat és webes alkalmazásokat készítek. A koffein és a zenehallgatás az alapvető szükségleteim közé tartoznak.",
   resumeLink: "Nézd meg az önéletrajzom",
 
   section2Title: "Technológiák",

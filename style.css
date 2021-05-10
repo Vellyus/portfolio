@@ -312,6 +312,13 @@ footer .icon {
     width: 30rem;
   }
 
+  p {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 40rem;
+  }
+
 
 }
 
