@@ -144,7 +144,7 @@ const englishLang =
   project1Title: "Personal website",
   project1Paragraph: "The site basically evolves as my coding skills grow. It contains every project that I did while learning to code and I write a blog about my journey.",
   project2Title: "Music player app",
-  project2Paragraph: "A music player app, with which the user can create a playlist from the songs I like. Other songs can be added by pasting in YouTube links. The app works with.",
+  project2Paragraph: "A music player app, with which the user can create a playlist from the songs I like. Other songs can be added by pasting in YouTube links. The app works with JavaScript (without libraries) and mainly consists of manipulating DOM elements.",
   project3Title: "Weather app",
   project3Paragraph: "A weather app that works with a web API. You can use it with location or you can search for a city. It also shows the local time of the searched location. Based on the browser's language the app can display the content in hungarian or in english.",
 
