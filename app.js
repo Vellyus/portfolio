@@ -137,6 +137,7 @@ const englishLang =
   section1Title: "About Me",
   section1Paragraph: "I'm a junior level developer, I create websites and web-applications. My basic needs involve caffeine and listening to music.",
   resumeLink: "Read my resume",
+  resumeSource: "resume_english.pdf",
 
   section2Title: "Tech Stack",
 
@@ -158,6 +159,8 @@ const hunLang =
   section1Title: "Rólam",
   section1Paragraph: "Junior szintű fejlesztő vagyok, weboldalakat és webes alkalmazásokat készítek. A koffein és a zenehallgatás az alapvető szükségleteim közé tartoznak.",
   resumeLink: "Nézd meg az önéletrajzom",
+  resumeSource: "resume.pdf",
+
 
   section2Title: "Technológiák",
 
@@ -206,6 +209,7 @@ langswitch.addEventListener("click", () =>
     section1Title.innerText = englishLang.section1Title
     section1Paragraph.innerText = englishLang.section1Paragraph
     resumeLink.innerText = englishLang.resumeLink
+    resumeLink.href = englishLang.resumeSource
     line.style.width = "7rem"
     section2Title.innerText = englishLang.section2Title
     section3Title.innerText = englishLang.section3Title
@@ -229,6 +233,7 @@ langswitch.addEventListener("click", () =>
     section1Title.innerText = hunLang.section1Title
     section1Paragraph.innerText = hunLang.section1Paragraph
     resumeLink.innerText = hunLang.resumeLink
+    resumeLink.href = hunLang.resumeSource
     line.style.width = "15rem"
     section2Title.innerText = hunLang.section2Title
     section3Title.innerText = hunLang.section3Title
