@@ -255,7 +255,7 @@ langswitch.addEventListener("click", () =>
     project3Title.innerText = hunLang.project3Title
     project3Paragraph.innerText = hunLang.project3Paragraph
     githubLinks.forEach(e => e.title = hunLang.linktitle_github)
-    websiteLinks.forEach(e => e.title = hunlang.linktitle_website)
+    websiteLinks.forEach(e => e.title = hunLang.linktitle_website)
     footerTitle.innerText = hunLang.footerTitle
     langswitch.innerText = hunLang.langswitch
   }
