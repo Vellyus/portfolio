@@ -148,6 +148,8 @@ const englishLang =
   project2Paragraph: "A music player app, with which the user can create a playlist from the songs I like. Other songs can be added by pasting in YouTube links. The app works with JavaScript (without libraries) and mainly consists of manipulating DOM elements.",
   project3Title: "Weather app",
   project3Paragraph: "A weather app that works with a web API. You can use it with location or you can search for a city. It also shows the local time of the searched location. Based on the browser's language the app can display the content in hungarian or in english.",
+  linktitle_github: "View code",
+  linktitle_website: "Visit website",
 
   footerTitle: "Contact"
 }
@@ -171,6 +173,9 @@ const hunLang =
   project2Paragraph: "Zenejátszó alkalmazás, amivel az általam kedvelt zenékből készíthet lejátszási listát a felhasználó. YouTube linkek bemásolásával saját zenék is hozzáadhatók a listához. Az app JavaScript-el működik (könyvtárak nélkül) és főleg DOM elemek manipulálásából áll.",
   project3Title: "Időjárás alkalmazás",
   project3Paragraph: "Időjárás alkalmazás, ami egy web API segítségével működik. Használható helymeghatározással vagy kereséssel is, és az aktuális város helyi idejét is mutatja. A böngésző nyelve alapján magyar vagy angol nyelvű az alkalmazás.",
+  linktitle_github: "Kód megtekintése",
+  linktitle_website: "Weboldal megtekintése",
+
 
   footerTitle: "Elérhetőség"
 }
@@ -192,6 +197,10 @@ const project2Paragraph = document.querySelectorAll(".projects p")[1]
 
 const project3Title = document.querySelectorAll(".projects h4")[2]
 const project3Paragraph = document.querySelectorAll(".projects p")[2]
+
+const githubLinks = document.querySelectorAll(".githubLink")
+const websiteLinks = document.querySelectorAll(".websiteLink")
+
 const footerTitle = document.querySelector("footer h3")
 
 const line = document.querySelector(".line")
@@ -219,6 +228,8 @@ langswitch.addEventListener("click", () =>
     project2Paragraph.innerText = englishLang.project2Paragraph
     project3Title.innerText = englishLang.project3Title
     project3Paragraph.innerText = englishLang.project3Paragraph
+    githubLinks.forEach(e => e.title = englishLang.linktitle_github)
+    websiteLinks.forEach(e => e.title = englishLang.linktitle_website)
     footerTitle.innerText = englishLang.footerTitle
     langswitch.innerText = englishLang.langswitch
   }
@@ -243,6 +254,8 @@ langswitch.addEventListener("click", () =>
     project2Paragraph.innerText = hunLang.project2Paragraph
     project3Title.innerText = hunLang.project3Title
     project3Paragraph.innerText = hunLang.project3Paragraph
+    githubLinks.forEach(e => e.title = hunLang.linktitle_github)
+    websiteLinks.forEach(e => e.title = hunlang.linktitle_website)
     footerTitle.innerText = hunLang.footerTitle
     langswitch.innerText = hunLang.langswitch
   }
