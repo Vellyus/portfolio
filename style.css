@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 :root {
-  --mainColor: #6885E3;
+  --mainColor: #869DE8;
   --secondaryColor: #D6F031;
-  --divBackgroundColor: #39497F;
-  --headerFooterBackgroundColor: #354272;
+  --divBackgroundColor: #334172;
+  --headerFooterBackgroundColor: #2D3A65;
   --titleColor: #fff;
   --callToActionColor: #FB8DB2;
 }
