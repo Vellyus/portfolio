@@ -8,22 +8,18 @@ const main = document.querySelector("main")
 
 const navList = document.querySelectorAll("nav li")
 
-const navEvenElements = function ()
-{
+const navEvenElements = function () {
   let arr = []
-  for (let i = 0; i < navList.length; i++)
-  {
+  for (let i = 0; i < navList.length; i++) {
     if (i % 2 === 0) arr.push(navList[i])
   }
 
   return arr
 }()
 
-const navOddElements = function ()
-{
+const navOddElements = function () {
   let arr = []
-  for (let i = 0; i < navList.length; i++)
-  {
+  for (let i = 0; i < navList.length; i++) {
     if (i % 2 != 0) arr.push(navList[i])
   }
 
@@ -37,13 +33,10 @@ navList.forEach(e => e.style.transition = "all 1s")
 main.style.transition = "all 1s"
 
 
-menuToggle.addEventListener("click", () =>
-{
+menuToggle.addEventListener("click", () => {
 
-  if (body.classList.contains("menuOpen"))
-  {
-    setTimeout(function ()
-    {
+  if (body.classList.contains("menuOpen")) {
+    setTimeout(function () {
       nav.style.visibility = "hidden"
       body.classList = []
       menuToggle.className = "fas fa-bars"
@@ -53,12 +46,10 @@ menuToggle.addEventListener("click", () =>
     navOddElements.forEach(e => e.style.transform = "translateX(-100%)")
     main.style.opacity = 1
   }
-  else 
-  {
+  else {
     nav.style.visibility = "visible"
 
-    setTimeout(function ()
-    {
+    setTimeout(function () {
       menuToggle.className = "fas fa-times"
       body.classList.add("menuOpen")
     }, 1000)
@@ -70,12 +61,9 @@ menuToggle.addEventListener("click", () =>
   }
 })
 
-body.addEventListener("click", (event) =>
-{
-  if (event.target != menuToggle && body.classList.contains("menuOpen"))
-  {
-    setTimeout(function ()
-    {
+body.addEventListener("click", (event) => {
+  if (event.target != menuToggle && body.classList.contains("menuOpen")) {
+    setTimeout(function () {
       nav.style.visibility = "hidden"
       body.classList = []
       menuToggle.className = "fas fa-bars"
@@ -95,8 +83,7 @@ const h2 = document.querySelector("h2")
 const logo = document.querySelector(".logo")
 
 
-window.addEventListener("scroll", () =>
-{
+window.addEventListener("scroll", () => {
   header.style.transition = "all 1s"
   h1.style.transition = "all 1s"
   h2.style.transition = "all 1s"
@@ -104,8 +91,7 @@ window.addEventListener("scroll", () =>
   logo.style.transition = "all 1s"
 
 
-  if (window.pageYOffset > 0)
-  {
+  if (window.pageYOffset > 0) {
     header.style.height = "6rem"
     h1.style.transform = "translateY(-14rem)"
     h2.style.transform = "translateY(-14rem)"
@@ -116,8 +102,7 @@ window.addEventListener("scroll", () =>
     logo.style.opacity = "1"
 
   }
-  else
-  {
+  else {
     header.style.height = "14rem"
     h1.style.transform = "translateY(0)"
     h2.style.transform = "translateY(0)"
@@ -133,9 +118,10 @@ window.addEventListener("scroll", () =>
 const englishLang =
 {
   langswitch: "HU",
+  h1: "Gábor Szalai",
   h2: "Front-End Developer",
   section1Title: "About Me",
-  section1Paragraph: "I'm a junior level developer, I create websites and web-applications. My basic needs involve caffeine and listening to music.",
+  section1Paragraph: "I work in front-end development, mainly with modern technologies like React, Next.js, and Tailwind. I’ve gained experience through personal projects and team collaborations, where not only coding but also problem-solving and teamwork played a key role. As a junior developer, I’m constantly expanding my knowledge and enjoy learning new things, whether it’s about technologies or workflows. I find it important to create clean solutions, pay attention to details, and write code that’s not only functional but also easy to understand.",
   resumeLink: "Read my resume",
   resumeSource: "resume_english.pdf",
 
@@ -157,9 +143,10 @@ const englishLang =
 const hunLang =
 {
   langswitch: "EN",
+  h1: "Szalai Gábor",
   h2: "Front-End Fejlesztő",
   section1Title: "Rólam",
-  section1Paragraph: "Junior szintű fejlesztő vagyok, weboldalakat és webes alkalmazásokat készítek. A koffein és a zenehallgatás az alapvető szükségleteim közé tartoznak.",
+  section1Paragraph: "Front-end fejlesztéssel foglalkozom, főleg modern technológiákkal, mint a React, Next.js és Tailwind. Saját projekteken és csapatmunkákban szereztem tapasztalatot, ahol nemcsak a kódolás, hanem a problémamegoldás és az együttműködés is kulcsszerepet kapott.Junior fejlesztőként folyamatosan bővítem a tudásom, szeretek új dolgokat tanulni, legyen szó technológiákról vagy munkafolyamatokról.Fontosnak tartom a letisztult megoldásokat, a részletekre figyelést és azt, hogy a kód ne csak működjön, hanem átlátható is legyen.",
   resumeLink: "Nézd meg az önéletrajzom",
   resumeSource: "resume.pdf",
 
@@ -205,10 +192,9 @@ const footerTitle = document.querySelector("footer h3")
 
 const line = document.querySelector(".line")
 
-langswitch.addEventListener("click", () =>
-{
-  if (langswitch.innerText === "EN")
-  {
+langswitch.addEventListener("click", () => {
+  if (langswitch.innerText === "EN") {
+    h1.innerText = englishLang.h1
     h2.innerText = englishLang.h2
     nav1.innerText = englishLang.section1Title
     nav2.innerText = englishLang.section2Title
@@ -233,8 +219,8 @@ langswitch.addEventListener("click", () =>
     footerTitle.innerText = englishLang.footerTitle
     langswitch.innerText = englishLang.langswitch
   }
-  else
-  {
+  else {
+    h1.innerText = hunLang.h1
     h2.innerText = hunLang.h2
     nav1.innerText = hunLang.section1Title
     nav2.innerText = hunLang.section2Title

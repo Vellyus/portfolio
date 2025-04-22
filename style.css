@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
 
 :root {
   --mainColor: #b6c4f1;
-  --secondaryColor: #D6F031;
+  --secondaryColor: #d6f031;
   --divBackgroundColor: #334172;
-  --headerFooterBackgroundColor: #2D3A65;
+  --headerFooterBackgroundColor: #2d3a65;
   --titleColor: #fff;
-  --callToActionColor: #FBA3C1;
+  --callToActionColor: #fba3c1;
 }
 
 /* GENERAL */
@@ -49,8 +49,8 @@ h1 {
   line-height: 1.4;
   color: var(--titleColor);
   font-variant: small-caps;
-  font-family: 'Times New Roman', Times, serif;
-  font-family: 'Nunito';
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Nunito";
 }
 
 h2 {
@@ -65,10 +65,10 @@ h3 {
   font-weight: normal;
   color: var(--titleColor);
   margin-top: 1rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-family: "Nunito";
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 h4 {
@@ -78,7 +78,7 @@ h4 {
   font-size: 1.6rem;
   font-family: "Nunito";
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 a {
@@ -160,7 +160,7 @@ nav li a {
   font-size: 1.6rem;
   cursor: pointer;
   text-decoration: none;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #techStack {
@@ -170,7 +170,7 @@ nav li a {
 nav li a:hover {
   color: var(--callToActionColor);
   font-size: 1.8rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 main {
@@ -179,9 +179,9 @@ main {
 
 /* ABOUT */
 .profilePic {
-  width: 6.5rem;
-  border-radius: 1.5rem;
-  margin-top: 2rem
+  width: 14rem;
+  border-radius: 50%;
+  margin-top: 2rem;
 }
 
 p {
@@ -201,7 +201,7 @@ p {
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1.5;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-family: "Nunito";
   animation: fadeUp 2.5s infinite;
 }
@@ -211,7 +211,7 @@ p {
   margin: auto;
   margin-top: 1rem;
   width: 15rem;
-  height: .2rem;
+  height: 0.2rem;
   background-color: var(--callToActionColor);
   animation: fadeUp 2.5s infinite;
 }
@@ -237,16 +237,16 @@ p {
 .projects .icon {
   color: var(--secondaryColor);
   width: 2.5rem;
-  margin: .5rem;
+  margin: 0.5rem;
   margin-top: 2rem;
-  animation: jump .7s infinite;
-  animation-timing-function: cubic-bezier(.35, -0.51, .68, 1.53);
-  transition: all .4s ease-in-out;
+  animation: jump 0.7s infinite;
+  animation-timing-function: cubic-bezier(0.35, -0.51, 0.68, 1.53);
+  transition: all 0.4s ease-in-out;
 }
 
 .projects .icon:hover {
   color: var(--callToActionColor);
-  animation: jump .7s linear;
+  animation: jump 0.7s linear;
 }
 
 .projects hr {
@@ -293,15 +293,14 @@ footer .icon {
   margin-right: 1rem;
 }
 
-
 /* MEDIA QUERIES */
-@media(min-width: 48em) {
+@media (min-width: 48em) {
   html {
     font-size: 11px;
   }
 
   .profilePic {
-    width: 8rem;
+    width: 16rem;
   }
 
   section {
@@ -316,13 +315,11 @@ footer .icon {
     display: block;
     margin: auto;
     margin-top: 2rem;
-    max-width: 40rem;
+    max-width: 50rem;
   }
-
-
 }
 
-@media(min-width: 64em) {
+@media (min-width: 64em) {
   html {
     font-size: 12px;
   }
@@ -330,22 +327,23 @@ footer .icon {
   section {
     width: 70%;
   }
-
 }
 
-@media(min-width: 64.125em) {
+@media (min-width: 64.125em) {
   section {
     width: 55%;
   }
 
+  p {
+    max-width: 60rem;
+  }
 }
 
-@media(min-width: 118.75em) {
+@media (min-width: 118.75em) {
   section {
     width: 45%;
   }
 }
-
 
 /* ANIMATIONS */
 @keyframes jump {
@@ -354,7 +352,7 @@ footer .icon {
   }
 
   50% {
-    transform: translateY(-.4rem);
+    transform: translateY(-0.4rem);
   }
 
   100% {
@@ -364,9 +362,8 @@ footer .icon {
 
 @keyframes fadeUp {
   0% {
-    transform: translateY(.5rem);
+    transform: translateY(0.5rem);
     opacity: 0;
-
   }
 
   75% {
