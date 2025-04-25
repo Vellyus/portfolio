@@ -129,7 +129,7 @@ const englishLang =
 
   section3Title: "Projects",
   project1Title: "Frontender",
-  project1Paragraph: "A site offering frontend courses. Users can register and subscribe to courses, which include text, images, and video content.The site is under development, and I’m working on it with my mentor. This is a much larger and more complex project compared to my previous ones, and it’s also the first time I worked with someone else(stories in Notion, pull requests on GitHub).Some of the more complex stories I wrote: password reset handling, course navigation on mobile view, event calendar, various text and image blocks, bug fixes.",
+  project1Paragraph: "A site offering frontend courses. Users can register and subscribe to courses, which include text, images, and video content.The site is under development, and I’m working on it with my mentor. This is a much larger and more complex project compared to my previous ones, and it’s also the first time I worked with someone else(stories in Notion, pull requests on GitHub).Some of the more complex stories I wrote: password reset handling, course navigation on mobile view, event calendar, various text and image blocks, bug fixes. \n (The code is in a private GitHub repository.)",
   project2Title: "Blog with admin panel",
   project2Paragraph: "A blog where the owner can register and log into an admin panel to edit content. The number of users is limited in Firebase. This was the first project where I implemented custom authentication and pagination. Currently, only one image can be uploaded per blog post. The app could be enhanced by allowing multiple image uploads and replacing the HTML-based content entry with a rich text editor.",
   project3Title: "Notebook",
@@ -158,7 +158,7 @@ const hunLang =
 
   section3Title: "Projektek",
   project1Title: "Frontender",
-  project1Paragraph: "Frontend kurzusokat tartalmazó oldal. A felhasználó regisztrálhat, majd előfizethet kurzusokra, amik szöveges-képes és videós tartalmakat is magukba foglalnak. Az oldal fejlesztés alatt áll, a mentorommal dolgozunk rajta. Ez a korábbiakhoz képest jóval nagyobb és komplexebb projekt, valamint ezen dolgoztam együtt valakivel először (story-k Notion-ben és pull requestek Github-on). Néhány bonyolultabb story, amiket én írtam: elfelejtett jelszó kezelése, kurzus navigáció mobil nézeten, eseménynaptár, különféle szöveges és képes blockok, bug javítások.",
+  project1Paragraph: "Frontend kurzusokat tartalmazó oldal. A felhasználó regisztrálhat, majd előfizethet kurzusokra, amik szöveges-képes és videós tartalmakat is magukba foglalnak. Az oldal fejlesztés alatt áll, a mentorommal dolgozunk rajta. Ez a korábbiakhoz képest jóval nagyobb és komplexebb projekt, valamint ezen dolgoztam együtt valakivel először (story-k Notion-ben és pull requestek Github-on). Néhány bonyolultabb story, amiket én írtam: elfelejtett jelszó kezelése, kurzus navigáció mobil nézeten, eseménynaptár, különféle szöveges és képes blockok, bug javítások. \n (A kód privát GitHub tárban van.)",
   project2Title: "Blog admin felülettel",
   project2Paragraph: "Blog, aminek a tulajdonosa egy admin felületre regisztrálva, majd belépve szerkesztheti a tartalmat. Firebase-ben korlátozva van a felhasználók száma. Ezen a projekten írtam először saját autentikációt és foglalkoztam lapozhatósággal. Jelenleg egy blog bejegyzéshez csak egy képet lehet feltölteni. Több kép feltöltésével és a tartalom HTML-ben való megadása helyett egy szövegszerkesztővel lehetne bővíteni az alkalmazást.",
   project3Title: "Notebook",
