@@ -233,6 +233,15 @@ p {
   margin-top: 2rem;
   width: 20rem;
 }
+.tech {
+  display: block;
+  font-style: italic;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  font-family: "Nunito";
+  line-height: 1.6;
+}
 
 .projects .icon {
   color: var(--secondaryColor);

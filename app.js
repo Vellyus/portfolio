@@ -128,12 +128,15 @@ const englishLang =
   section2Title: "Tech Stack",
 
   section3Title: "Projects",
-  project1Title: "Personal website",
-  project1Paragraph: "The site basically evolves as my coding skills grow. It contains every project that I did while learning to code and I write a blog about my journey.",
-  project2Title: "Music player app",
-  project2Paragraph: "A music player app, with which the user can create a playlist from the songs I like. Other songs can be added by pasting in YouTube links. The app works with JavaScript (without libraries) and mainly consists of manipulating DOM elements.",
-  project3Title: "Weather app",
-  project3Paragraph: "A weather app that works with a web API. You can use it with location or you can search for a city. It also shows the local time of the searched location. Based on the browser's language the app can display the content in hungarian or in english.",
+  project1Title: "Frontender",
+  project1Paragraph: "A site offering frontend courses. Users can register and subscribe to courses, which include text, images, and video content.The site is under development, and I’m working on it with my mentor. This is a much larger and more complex project compared to my previous ones, and it’s also the first time I worked with someone else(stories in Notion, pull requests on GitHub).Some of the more complex stories I wrote: password reset handling, course navigation on mobile view, event calendar, various text and image blocks, bug fixes.",
+  project2Title: "Blog with admin panel",
+  project2Paragraph: "A blog where the owner can register and log into an admin panel to edit content. The number of users is limited in Firebase. This was the first project where I implemented custom authentication and pagination. Currently, only one image can be uploaded per blog post. The app could be enhanced by allowing multiple image uploads and replacing the HTML-based content entry with a rich text editor.",
+  project3Title: "Notebook",
+  project3Paragraph: "Full-stack application for note-taking with a custom domain and SSL certification. The biggest challenges during development were using the Google API for authentication and setting up hosting on DigitalOcean.",
+  project4Title: "Personal website",
+  project4Paragraph: "The site basically evolves as my coding skills grow. It contains every project that I did while learning to code and I write a blog about my journey.",
+
   linktitle_github: "View code",
   linktitle_website: "Visit website",
 
@@ -154,12 +157,15 @@ const hunLang =
   section2Title: "Technológiák",
 
   section3Title: "Projektek",
-  project1Title: "Személyes weoldal",
-  project1Paragraph: "Az oldal lényegében velem együtt fejlődik. Tartalmaz minden projektet, amit tanulás közben készítettem és egy blogot is vezetek a folyamatról.",
-  project2Title: "Zenejátszó alkalmazás",
-  project2Paragraph: "Zenejátszó alkalmazás, amivel az általam kedvelt zenékből készíthet lejátszási listát a felhasználó. YouTube linkek bemásolásával saját zenék is hozzáadhatók a listához. Az app JavaScript-el működik (könyvtárak nélkül) és főleg DOM elemek manipulálásából áll.",
-  project3Title: "Időjárás alkalmazás",
-  project3Paragraph: "Időjárás alkalmazás, ami egy web API segítségével működik. Használható helymeghatározással vagy kereséssel is, és az aktuális város helyi idejét is mutatja. A böngésző nyelve alapján magyar vagy angol nyelvű az alkalmazás.",
+  project1Title: "Frontender",
+  project1Paragraph: "Frontend kurzusokat tartalmazó oldal. A felhasználó regisztrálhat, majd előfizethet kurzusokra, amik szöveges-képes és videós tartalmakat is magukba foglalnak. Az oldal fejlesztés alatt áll, a mentorommal dolgozunk rajta. Ez a korábbiakhoz képest jóval nagyobb és komplexebb projekt, valamint ezen dolgoztam együtt valakivel először (story-k Notion-ben és pull requestek Github-on). Néhány bonyolultabb story, amiket én írtam: elfelejtett jelszó kezelése, kurzus navigáció mobil nézeten, eseménynaptár, különféle szöveges és képes blockok, bug javítások.",
+  project2Title: "Blog admin felülettel",
+  project2Paragraph: "Blog, aminek a tulajdonosa egy admin felületre regisztrálva, majd belépve szerkesztheti a tartalmat. Firebase-ben korlátozva van a felhasználók száma. Ezen a projekten írtam először saját autentikációt és foglalkoztam lapozhatósággal. Jelenleg egy blog bejegyzéshez csak egy képet lehet feltölteni. Több kép feltöltésével és a tartalom HTML-ben való megadása helyett egy szövegszerkesztővel lehetne bővíteni az alkalmazást.",
+  project3Title: "Notebook",
+  project3Paragraph: "Full stack alkalmazás jegyzetelésre saját domain névvel és SSL certifikációval. A Google API használata az autentikációhoz és a DigitalOcean-ön való hostolás megoldása jelentették a legnyagyobb kihívást a fejlesztés során.",
+  project4Title: "Személyes weoldal",
+  project4Paragraph: "Az oldal lényegében velem együtt fejlődik. Tartalmaz minden projektet, amit tanulás közben készítettem és egy blogot is vezetek a folyamatról.",
+
   linktitle_github: "Kód megtekintése",
   linktitle_website: "Weboldal megtekintése",
 
@@ -184,6 +190,9 @@ const project2Paragraph = document.querySelectorAll(".projects p")[1]
 
 const project3Title = document.querySelectorAll(".projects h4")[2]
 const project3Paragraph = document.querySelectorAll(".projects p")[2]
+const project4Title = document.querySelectorAll(".projects h4")[3]
+const project4Paragraph = document.querySelectorAll(".projects p")[3]
+
 
 const githubLinks = document.querySelectorAll(".githubLink")
 const websiteLinks = document.querySelectorAll(".websiteLink")
@@ -214,6 +223,8 @@ langswitch.addEventListener("click", () => {
     project2Paragraph.innerText = englishLang.project2Paragraph
     project3Title.innerText = englishLang.project3Title
     project3Paragraph.innerText = englishLang.project3Paragraph
+    project4Title.innerText = englishLang.project4Title
+    project4Paragraph.innerText = englishLang.project4Paragraph
     githubLinks.forEach(e => e.title = englishLang.linktitle_github)
     websiteLinks.forEach(e => e.title = englishLang.linktitle_website)
     footerTitle.innerText = englishLang.footerTitle
@@ -240,6 +251,8 @@ langswitch.addEventListener("click", () => {
     project2Paragraph.innerText = hunLang.project2Paragraph
     project3Title.innerText = hunLang.project3Title
     project3Paragraph.innerText = hunLang.project3Paragraph
+    project4Title.innerText = hunLang.project4Title
+    project4Paragraph.innerText = hunLang.project4Paragraph
     githubLinks.forEach(e => e.title = hunLang.linktitle_github)
     websiteLinks.forEach(e => e.title = hunLang.linktitle_website)
     footerTitle.innerText = hunLang.footerTitle
