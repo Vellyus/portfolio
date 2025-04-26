@@ -334,24 +334,25 @@ footer .icon {
   }
 
   section {
-    width: 70%;
+    width: 75%;
   }
 }
 
 @media (min-width: 64.125em) {
-  section {
-    width: 55%;
-  }
-
   p {
     max-width: 60rem;
+  }
+
+  .techList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
   }
 }
 
 @media (min-width: 118.75em) {
-  section {
-    width: 45%;
-  }
 }
 
 /* ANIMATIONS */
