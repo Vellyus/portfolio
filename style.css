@@ -225,7 +225,23 @@ p {
 }
 
 .techList li {
-  margin: 1.2rem;
+  margin: 1rem;
+}
+
+i {
+  display: inline-block;
+  width: 4rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.techList li span {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.techStack h4 {
+  margin-top: 6em;
 }
 
 /* PROJECTS */
@@ -344,11 +360,15 @@ footer .icon {
   }
 
   .techList {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    grid-column-gap: 3rem;
-    grid-row-gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .techList li {
+    width: 21rem;
   }
 }
 

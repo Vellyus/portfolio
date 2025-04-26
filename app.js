@@ -126,6 +126,11 @@ const englishLang =
   resumeSource: "resume_english.pdf",
 
   section2Title: "Tech Stack",
+  techSection1: "Frontend development",
+  techSection2: "Backend & Databases",
+  techSection3: "Design & Prototyping",
+  techSection4: "Tools & Workflow",
+  techSection5: "Hosting & Deployment",
 
   section3Title: "Projects",
   project1Title: "Frontender",
@@ -155,6 +160,11 @@ const hunLang =
 
 
   section2Title: "Technológiák",
+  techSection1: "Frontend fejlesztés",
+  techSection2: "Backend és adatbázisok",
+  techSection3: "Tervezés és prototípus készítés",
+  techSection4: "Eszközök és munkafolyamatok",
+  techSection5: "Tárhely és üzemeltetés",
 
   section3Title: "Projektek",
   project1Title: "Frontender",
@@ -182,6 +192,11 @@ const section1Title = document.querySelector(".about h3")
 const section1Paragraph = document.querySelector(".about p")
 const resumeLink = document.querySelector(".resumeLink")
 const section2Title = document.querySelector(".techStack h3")
+const techSection1 = document.querySelectorAll(".techStack h4")[0]
+const techSection2 = document.querySelectorAll(".techStack h4")[1]
+const techSection3 = document.querySelectorAll(".techStack h4")[2]
+const techSection4 = document.querySelectorAll(".techStack h4")[3]
+const techSection5 = document.querySelectorAll(".techStack h4")[4]
 const section3Title = document.querySelector(".projects h3")
 const project1Title = document.querySelectorAll(".projects h4")[0]
 const project1Paragraph = document.querySelectorAll(".projects p")[0]
@@ -216,6 +231,11 @@ langswitch.addEventListener("click", () => {
     resumeLink.href = englishLang.resumeSource
     line.style.width = "7rem"
     section2Title.innerText = englishLang.section2Title
+    techSection1.innerText = englishLang.techSection1
+    techSection2.innerText = englishLang.techSection2
+    techSection3.innerText = englishLang.techSection3
+    techSection4.innerText = englishLang.techSection4
+    techSection5.innerText = englishLang.techSection5
     section3Title.innerText = englishLang.section3Title
     project1Title.innerText = englishLang.project1Title
     project1Paragraph.innerText = englishLang.project1Paragraph
@@ -244,6 +264,11 @@ langswitch.addEventListener("click", () => {
     resumeLink.href = hunLang.resumeSource
     line.style.width = "15rem"
     section2Title.innerText = hunLang.section2Title
+    techSection1.innerText = hunLang.techSection1
+    techSection2.innerText = hunLang.techSection2
+    techSection3.innerText = hunLang.techSection3
+    techSection4.innerText = hunLang.techSection4
+    techSection5.innerText = hunLang.techSection5
     section3Title.innerText = hunLang.section3Title
     project1Title.innerText = hunLang.project1Title
     project1Paragraph.innerText = hunLang.project1Paragraph
