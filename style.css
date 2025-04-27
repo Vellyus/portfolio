@@ -210,6 +210,7 @@ p {
   display: block;
   margin: auto;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 15rem;
   height: 0.2rem;
   background-color: var(--callToActionColor);
@@ -384,6 +385,59 @@ footer .icon {
   .techList li {
     width: 20rem;
   }
+
+}
+
+@media (min-width: 87.5em) {
+  .projectImg {
+    width: 40rem;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  .techSections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .techSection {
+    width: 45%;
+  }
+
+  i {
+    width: 2rem;
+  }
+
+  .techList li {
+    width: 14rem;
+  }
+
+  .techStack h3 {
+    margin-bottom: 2rem;
+  }
+
+  .techStack h4 {
+    margin-top: 3rem;
+  }
+
+  .projectSections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .projectSection {
+    width: 45%;
+    margin-bottom: 6rem;
+  }
+
 }
 
 @media (min-width: 118.75em) {
@@ -404,7 +458,7 @@ footer .icon {
   }
 
   .techSection {
-    width:45%
+    width: 45%;
   }
 
   i {
@@ -421,6 +475,19 @@ footer .icon {
 
   .techStack h4 {
     margin-top: 3rem;
+  }
+
+  .projectSections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .projectSection {
+    width: 45%;
+    margin-bottom: 6rem;
   }
 }
 
