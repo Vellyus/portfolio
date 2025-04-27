@@ -295,6 +295,25 @@ p {
   margin-top: 4rem;
 }
 
+.codewarsBanner {
+  box-shadow: none;
+  margin-top: 2rem 0;
+  max-width: 90%;
+  vertical-align: middle;
+}
+
+.codewars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.codewars p {
+margin: 2rem 0;
+}
+
 /* FOOTER */
 
 footer {

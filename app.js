@@ -145,6 +145,10 @@ const englishLang =
   linktitle_github: "View code",
   linktitle_website: "Visit website",
 
+  codewarsTitle: "In addition to building websites, I also tackle programming challenges",
+  codewarsParagraph: "My Codewars profile:",
+
+
   footerTitle: "Contact"
 }
 
@@ -179,6 +183,9 @@ const hunLang =
   linktitle_github: "Kód megtekintése",
   linktitle_website: "Weboldal megtekintése",
 
+  codewarsTitle: "Weboldalak készítése mellett programozó feladatokat is gyakorlok",
+  codewarsParagraph: "A Codewars profilom:",
+
 
   footerTitle: "Elérhetőség"
 }
@@ -211,6 +218,9 @@ const project4Paragraph = document.querySelectorAll(".projects p")[3]
 
 const githubLinks = document.querySelectorAll(".githubLink")
 const websiteLinks = document.querySelectorAll(".websiteLink")
+
+const codewarsTitle = document.querySelectorAll(".projects h4")[4]
+const codewarsParagraph = document.querySelector(".codewars p")
 
 const footerTitle = document.querySelector("footer h3")
 
@@ -245,6 +255,8 @@ langswitch.addEventListener("click", () => {
     project3Paragraph.innerText = englishLang.project3Paragraph
     project4Title.innerText = englishLang.project4Title
     project4Paragraph.innerText = englishLang.project4Paragraph
+    codewarsTitle.innerText = englishLang.codewarsTitle
+    codewarsParagraph.innerText = englishLang.codewarsParagraph
     githubLinks.forEach(e => e.title = englishLang.linktitle_github)
     websiteLinks.forEach(e => e.title = englishLang.linktitle_website)
     footerTitle.innerText = englishLang.footerTitle
@@ -278,6 +290,9 @@ langswitch.addEventListener("click", () => {
     project3Paragraph.innerText = hunLang.project3Paragraph
     project4Title.innerText = hunLang.project4Title
     project4Paragraph.innerText = hunLang.project4Paragraph
+    codewarsTitle.innerText = hunLang.codewarsTitle
+    codewarsParagraph.innerText = hunLang.codewarsParagraph
+
     githubLinks.forEach(e => e.title = hunLang.linktitle_github)
     websiteLinks.forEach(e => e.title = hunLang.linktitle_website)
     footerTitle.innerText = hunLang.footerTitle
