@@ -278,6 +278,12 @@ p {
   animation: jump 0.7s infinite;
   animation-timing-function: cubic-bezier(0.35, -0.51, 0.68, 1.53);
   transition: all 0.4s ease-in-out;
+  vertical-align: middle;
+}
+
+.playIcon {
+  width: 3rem !important;
+  vertical-align: middle;
 }
 
 .projects .icon:hover {
@@ -311,7 +317,7 @@ p {
 }
 
 .codewars p {
-margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 /* FOOTER */
