@@ -92,6 +92,10 @@ a.anchor {
   visibility: hidden;
 }
 
+img {
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* HEADER */
 header {
   background-color: var(--headerFooterBackgroundColor);
@@ -253,7 +257,8 @@ i {
 /* PROJECTS */
 .projectImg {
   margin-top: 2rem;
-  width: 25rem;
+  width: 90%;
+  border-radius: 1rem;
 }
 .tech {
   display: block;
@@ -283,8 +288,11 @@ i {
 .projects hr {
   width: 70%;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
+}
+.projects h4 {
+  margin-top: 4rem;
 }
 
 /* FOOTER */
@@ -339,10 +347,6 @@ footer .icon {
     width: 90%;
   }
 
-  .projectImg {
-    width: 40rem;
-  }
-
   p {
     display: block;
     margin: auto;
@@ -357,6 +361,11 @@ footer .icon {
   .techStack h4 {
     margin-top: 6rem;
   }
+
+.projectSection {
+  margin-bottom: 4rem;
+}  
+
 }
 
 @media (min-width: 64em) {
@@ -385,14 +394,9 @@ footer .icon {
   .techList li {
     width: 20rem;
   }
-
 }
 
 @media (min-width: 87.5em) {
-  .projectImg {
-    width: 40rem;
-  }
-
   section {
     width: 95%;
   }
@@ -438,13 +442,12 @@ footer .icon {
     margin-bottom: 6rem;
   }
 
+  hr {
+    display: none;
+  }
 }
 
 @media (min-width: 118.75em) {
-  .projectImg {
-    width: 60rem;
-  }
-
   section {
     width: 95%;
   }
