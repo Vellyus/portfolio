@@ -252,7 +252,7 @@ i {
 /* PROJECTS */
 .projectImg {
   margin-top: 2rem;
-  width: 20rem;
+  width: 25rem;
 }
 .tech {
   display: block;
@@ -338,7 +338,7 @@ footer .icon {
   }
 
   .projectImg {
-    width: 30rem;
+    width: 40rem;
   }
 
   p {
@@ -355,7 +355,6 @@ footer .icon {
   .techStack h4 {
     margin-top: 6rem;
   }
-  
 }
 
 @media (min-width: 64em) {
@@ -387,6 +386,9 @@ footer .icon {
 }
 
 @media (min-width: 118.75em) {
+  .projectImg {
+    width: 60rem;
+  }
 }
 
 /* ANIMATIONS */
