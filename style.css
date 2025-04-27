@@ -222,6 +222,11 @@ p {
   list-style-type: none;
   font-size: 1.8rem;
   font-family: "Nunito";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .techList li {
@@ -230,7 +235,7 @@ p {
 
 i {
   display: inline-block;
-  width: 4rem;
+  width: 2rem;
   vertical-align: middle;
   margin-right: 1rem;
 }
@@ -241,7 +246,7 @@ i {
 }
 
 .techStack h4 {
-  margin-top: 6em;
+  margin-top: 4rem;
 }
 
 /* PROJECTS */
@@ -342,6 +347,15 @@ footer .icon {
     margin-top: 2rem;
     max-width: 50rem;
   }
+
+  i {
+    width: 3rem;
+  }
+
+  .techStack h4 {
+    margin-top: 6rem;
+  }
+  
 }
 
 @media (min-width: 64em) {
@@ -368,7 +382,7 @@ footer .icon {
   }
 
   .techList li {
-    width: 21rem;
+    width: 20rem;
   }
 }
 
