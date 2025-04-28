@@ -158,7 +158,7 @@ const hunLang =
   h1: "Szalai Gábor",
   h2: "Front-End Fejlesztő",
   section1Title: "Rólam",
-  section1Paragraph: "Front-end fejlesztéssel foglalkozom, főleg modern technológiákkal, mint a React, Next.js és Tailwind. Saját projekteken és csapatmunkákban szereztem tapasztalatot, ahol nemcsak a kódolás, hanem a problémamegoldás és az együttműködés is kulcsszerepet kapott.Junior fejlesztőként folyamatosan bővítem a tudásom, szeretek új dolgokat tanulni, legyen szó technológiákról vagy munkafolyamatokról.Fontosnak tartom a letisztult megoldásokat, a részletekre figyelést és azt, hogy a kód ne csak működjön, hanem átlátható is legyen.",
+  section1Paragraph: "Front-end fejlesztéssel foglalkozom, főleg modern technológiákkal, mint a React, Next.js és Tailwind. Saját projekteken és csapatmunkákban szereztem tapasztalatot, ahol nemcsak a kódolás, hanem a problémamegoldás és az együttműködés is kulcsszerepet kapott. Junior fejlesztőként folyamatosan bővítem a tudásom, szeretek új dolgokat tanulni, legyen szó technológiákról vagy munkafolyamatokról. Fontosnak tartom a letisztult megoldásokat, a részletekre figyelést és azt, hogy a kód ne csak működjön, hanem átlátható is legyen.",
   resumeLink: "Nézd meg az önéletrajzom",
   resumeSource: "resume.pdf",
 
