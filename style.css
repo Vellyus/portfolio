@@ -271,22 +271,24 @@ p {
 }
 
 .projects .icon {
+  position: relative;
   color: var(--secondaryColor);
-  width: 2.5rem;
+  width: 3rem;
   margin: 0.5rem;
   margin-top: 2rem;
-  animation: bounce 1.8s infinite ease-in-out;
+  animation: bounce 1.1s infinite ease-in-out;
   vertical-align: middle;
-}
-
-.playIcon {
-  width: 3rem !important;
-  vertical-align: middle;
+  z-index: 3;
 }
 
 .projects .icon:hover {
   color: var(--callToActionColor);
-  animation: jump 0.7s linear;
+  /* animation-play-state: paused; */
+
+  /* animation: jump 1.1s infinite ease-in-out; */
+  /* Solve with JS: The icon and the shadow animations should stop if I hover the mouse over the a tag and should start again together if the mouse is no longer on it 
+  play state paused-et kell beállítani mindkettőre
+  */
 }
 
 .projects hr {
@@ -323,25 +325,19 @@ p {
 .githubLink {
   position: relative;
   display: inline-block;
-  width: 4rem;
-  height: 5rem;
 }
 
 .shadow {
-  position: absolute;
-  bottom: -2rem;
-  left: 47%;
+  position: relative;
+  bottom: -.1rem;
+  left: 48%;
   width: 2.5rem;
   height: 15px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   transform: translateX(-50%);
-  animation: shadowScale 1.8s infinite ease-in-out;
-}
-
-.videoLink .shadow {
-  bottom: -46%;
-  left: 50%;
+  animation: shadowScale 1.1s infinite ease-in-out;
+  z-index: 1;
 }
 
 /* FOOTER */
@@ -414,11 +410,6 @@ footer .icon {
   .projectSection {
     margin-bottom: 4rem;
   }
-
-  .videoLink .shadow {
-    bottom: -45%;
-    left: 48%;
-  }
 }
 
 @media (min-width: 64em) {
@@ -428,11 +419,6 @@ footer .icon {
 
   section {
     width: 75%;
-  }
-
-  .videoLink .shadow {
-    bottom: -45%;
-    left: 50%;
   }
 }
 
@@ -572,13 +558,7 @@ footer .icon {
   0% {
     transform: translateY(0) scaleX(1) scaleY(1);
   }
-  25% {
-    transform: translateY(1.5rem) scaleX(1.1) scaleY(0.9);
-  }
   50% {
-    transform: translateY(0) scaleX(1) scaleY(1);
-  }
-  75% {
     transform: translateY(1.5rem) scaleX(1.1) scaleY(0.9);
   }
   100% {
@@ -589,22 +569,14 @@ footer .icon {
 @keyframes shadowScale {
   0% {
     transform: translateX(-50%) scaleX(1);
-    opacity: 0.6;
-  }
-  25% {
-    transform: translateX(-50%) scaleX(1.2);
     opacity: 0.4;
   }
   50% {
-    transform: translateX(-50%) scaleX(1);
-    opacity: 0.6;
-  }
-  75% {
     transform: translateX(-50%) scaleX(1.2);
-    opacity: 0.4;
+    opacity: 0.6;
   }
   100% {
     transform: translateX(-50%) scaleX(1);
-    opacity: 0.6;
+    opacity: 0.4;
   }
 }
