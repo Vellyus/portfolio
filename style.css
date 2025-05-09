@@ -281,14 +281,10 @@ p {
   z-index: 3;
 }
 
-.projects .icon:hover {
+.projects .icon:hover,
+.projects .icon:hover + .shadow {
   color: var(--callToActionColor);
-  /* animation-play-state: paused; */
-
-  /* animation: jump 1.1s infinite ease-in-out; */
-  /* Solve with JS: The icon and the shadow animations should stop if I hover the mouse over the a tag and should start again together if the mouse is no longer on it 
-  play state paused-et kell beállítani mindkettőre
-  */
+  animation-play-state: paused;
 }
 
 .projects hr {
@@ -329,7 +325,7 @@ p {
 
 .shadow {
   position: relative;
-  bottom: -.1rem;
+  bottom: -0.1rem;
   left: 48%;
   width: 2.5rem;
   height: 15px;
