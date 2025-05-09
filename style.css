@@ -281,8 +281,8 @@ p {
   z-index: 3;
 }
 
-.projects .icon:hover,
-.projects .icon:hover + .shadow {
+a:hover .icon,
+a:hover .shadow {
   color: var(--callToActionColor);
   animation-play-state: paused;
 }
