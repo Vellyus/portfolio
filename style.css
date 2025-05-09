@@ -29,10 +29,6 @@ body {
   text-align: center;
 }
 
-header {
-  z-index: 3;
-}
-
 header,
 .container {
   padding: 2rem;
@@ -106,7 +102,7 @@ header {
   height: 14rem;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 
 header .wrapper {
