@@ -27,10 +27,13 @@ body {
   color: var(--mainColor);
   background-color: var(--mainColor);
   text-align: center;
+ }
+
+.container {
+  padding: 2rem 0;
 }
 
-header,
-.container {
+header {
   padding: 2rem;
 }
 
@@ -40,7 +43,7 @@ section {
   margin-top: 3rem;
   width: 100%;
   padding: 2rem;
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
 }
 
 h1 {
@@ -150,6 +153,10 @@ nav {
   top: 12rem;
   left: 0;
   visibility: hidden;
+}
+
+nav ul {
+  list-style-type: none;
 }
 
 nav li a {
@@ -378,7 +385,8 @@ footer .icon {
 @media (min-width: 48em) {
   html {
     font-size: 11px;
-  }
+  } /* border-radius: 1.5rem; */
+
 
   .profilePic {
     width: 16rem;
@@ -386,6 +394,11 @@ footer .icon {
 
   section {
     width: 90%;
+     border-radius: 1.5rem;
+  }
+
+  .container {
+    padding: 2rem;
   }
 
   p {
@@ -406,6 +419,7 @@ footer .icon {
   .projectSection {
     margin-bottom: 4rem;
   }
+
 }
 
 @media (min-width: 64em) {
